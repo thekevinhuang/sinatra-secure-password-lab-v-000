@@ -58,7 +58,7 @@ class ApplicationController < Sinatra::Base
 
   get "/withdrawal" do
     if logged_in?
-      erb :deposit
+      erb :withdraw
     else
       redirect "/failure"
     end
